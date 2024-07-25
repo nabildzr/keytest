@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(252, 212, 138);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.display {
+  box-shadow: 0px 0px 12px orange;
+  font-weight: bold;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.display h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-c {
+  box-shadow: 0px 0px 12px black;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-c:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.input-c:hover::placeholder {
+  color: white;
+}
+
+.input-c:focus {
+    background: rgb(255, 199, 96);
+
+  box-shadow: none;
+  outline: none;
+  border-color: black;
+}
+
+.input-c::placeholder {
+  color: orange;
+}
+
+.input-c:focus::placeholder {
+  color: black;
+}
+
+
+.btn-confirm {
+    box-shadow: 0px 0px 12px rgb(81, 255, 75);
+    transition: all 0.2s;
+    margin-top: 20px;
+    background-color: rgb(81, 255, 75);
+    color: rgb(20, 122, 14);
+    padding: 12px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* make center */
+
+}
+
+.btn-confirm:hover {
+    background-color: rgb(20, 122, 14);
+
+    box-shadow: 0px 0px 12px rgb(20, 122, 14);
+    color: rgb(81, 255, 75);
+
+}
+
+li {
+    margin-left: 40px;
+}
